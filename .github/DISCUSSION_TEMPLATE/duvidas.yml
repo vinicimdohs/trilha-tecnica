@@ -1,0 +1,15 @@
+body:
+  - type: dropdown
+    id: assunto
+    attributes:
+      label: Assunto
+      options: ["Leitura", "Git", "Testes / TDD", "HTTP / API", "Docker", "Banco de dados", "CI", "Requisitos do marco", "Outro"]
+    validations:
+      required: true
+  - type: textarea
+    id: duvida
+    attributes:
+      label: Dúvida
+      description: O que você tentou e onde travou. Link para o trecho do seu projeto, se houver.
+    validations:
+      required: true

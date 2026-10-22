@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❓ Dúvida sobre o conteúdo ou o projeto
+    url: https://github.com/vinicimdohs/trilha-tecnica/discussions/categories/duvidas
+    about: Dúvidas vão para Discussions → Dúvidas, não para issues.
+  - name: 💡 Sugestão para o programa
+    url: https://github.com/vinicimdohs/trilha-tecnica/discussions/categories/sugestoes
+    about: Discuta a ideia primeiro; se vingar, ela vira issue com label roadmap.

@@ -1,0 +1,31 @@
+name: 🔁 Tarefa de recuperação
+description: Evidência de critério de saída que ficou pendente após um marco.
+title: "[Recuperação] @usuario — "
+labels: ["recuperacao"]
+body:
+  - type: dropdown
+    id: marco
+    attributes:
+      label: Marco
+      options: ["Marco A", "Marco B"]
+    validations:
+      required: true
+  - type: input
+    id: criterio
+    attributes:
+      label: Critério de saída pendente
+      placeholder: "Ex.: Identifica e nomeia code smells"
+    validations:
+      required: true
+  - type: textarea
+    id: tarefa
+    attributes:
+      label: Tarefa combinada
+      description: O que precisa ser feito para comprovar o critério, e como será verificado.
+    validations:
+      required: true
+  - type: input
+    id: prazo
+    attributes:
+      label: Prazo
+      placeholder: dd/mm/aaaa

@@ -1,0 +1,32 @@
+name: ✅ Checklist do Marco B
+description: Acompanhe seus requisitos do Marco B (15/02). Uma issue por participante.
+title: "[Marco B] @seu-usuario"
+labels: ["nivel-1", "bloco-b", "marco-b"]
+body:
+  - type: input
+    id: projeto
+    attributes:
+      label: Link do seu projeto
+      placeholder: https://github.com/seu-usuario/meu-projeto
+    validations:
+      required: true
+  - type: checkboxes
+    id: requisitos
+    attributes:
+      label: Requisitos do projeto
+      description: Tudo do Marco A continua valendo. Comente com os links que comprovam cada item.
+      options:
+        - label: Clone limpo + docker compose up sobe servidor e banco (só copiando o .env.example)
+        - label: Esquema do banco criado por migrations versionadas
+        - label: Testes de integração contra banco descartável subido automaticamente, com um comando no README
+        - label: Acesso a dados atrás de Repository (interface + implementação); regra de negócio não conhece SQL
+        - label: DTOs na fronteira da API; nenhuma entidade serializada diretamente
+        - label: Pelo menos 2 padrões GoF aplicados onde resolvem um problema real
+        - label: Nota de decisão por padrão (problema, por que este padrão, 1 padrão rejeitado)
+        - label: CI rodando lint + unitários + integração a cada PR, com merge bloqueado se falhar
+        - label: Versões publicadas seguindo SemVer, com tags e CHANGELOG coerentes
+        - label: 2 PRs meus revisados por colega e 2 PRs de colegas revisados por mim
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: Bloqueios ou observações

@@ -1,0 +1,35 @@
+name: ✅ Checklist do Marco A
+description: Acompanhe seus requisitos do Marco A (07/12). Uma issue por participante.
+title: "[Marco A] @seu-usuario"
+labels: ["nivel-1", "bloco-a", "marco-a"]
+body:
+  - type: input
+    id: projeto
+    attributes:
+      label: Link do seu projeto
+      placeholder: https://github.com/seu-usuario/meu-projeto
+    validations:
+      required: true
+  - type: checkboxes
+    id: requisitos
+    attributes:
+      label: Requisitos do projeto
+      description: Marque conforme for cumprindo e comente nesta issue com os links (PR, commit, tag) que comprovam cada item.
+      options:
+        - label: Clone limpo + um comando documentado no README roda toda a suíte de testes
+        - label: Formatador e linter configurados e rodando no pre-commit hook
+        - label: CRUD de pelo menos 2 entidades relacionadas via API HTTP, com status codes corretos
+        - label: Toda regra de negócio tem teste unitário F.I.R.S.T.
+        - label: Funções curtas (~20 linhas), aninhamento ≤ 2, arquivos < ~300 linhas (exceções justificadas)
+        - label: Nenhum nome genérico sem qualificação (data, info, handler, manager, utils, helper)
+        - label: Erros de validação com valor recebido e formato esperado; nenhum catch vazio
+        - label: Pelo menos uma dependência injetada e substituída por fake nos testes
+        - label: Commits atômicos em Conventional Commits; refatorações separadas e nomeadas
+        - label: Pelo menos uma versão publicada com tag anotada e CHANGELOG coerente
+        - label: Nenhum segredo no histórico; .env.example documentando as variáveis
+        - label: 2 PRs meus revisados por colega e 2 PRs de colegas revisados por mim
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: Bloqueios ou observações
+      description: O que está travando? Precisa de ajuda em algo?

@@ -1,0 +1,28 @@
+title: "Semana XX — Tema"
+labels: ["nivel-1"]
+body:
+  - type: input
+    id: semana
+    attributes:
+      label: Guia da semana
+      placeholder: link para nivel-1/semanas/XX-tema.md
+    validations:
+      required: true
+  - type: input
+    id: facilitador
+    attributes:
+      label: Facilitador
+      placeholder: "@usuario"
+    validations:
+      required: true
+  - type: textarea
+    id: perguntas
+    attributes:
+      label: Perguntas para o encontro
+      description: 2–3 perguntas de discussão. O resumo do encontro entra depois, como comentário.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true

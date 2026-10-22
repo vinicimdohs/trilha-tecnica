@@ -1,0 +1,14 @@
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link (release, PR ou commit)
+    validations:
+      required: true
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que você quer mostrar
+      description: O que fez, o que aprendeu, o que faria diferente.
+    validations:
+      required: true

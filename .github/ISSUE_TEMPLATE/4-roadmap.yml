@@ -1,0 +1,22 @@
+name: 🗺️ Mudança no roadmap
+description: Mudança no programa já discutida em Sugestões.
+title: "[Roadmap] "
+labels: ["roadmap"]
+body:
+  - type: input
+    id: discussao
+    attributes:
+      label: Link da discussão de origem
+  - type: textarea
+    id: mudanca
+    attributes:
+      label: O que muda e por quê
+    validations:
+      required: true
+  - type: dropdown
+    id: versao
+    attributes:
+      label: Impacto de versão
+      options: ["PATCH — correção", "MINOR — conteúdo novo", "MAJOR — estrutura do programa"]
+    validations:
+      required: true
