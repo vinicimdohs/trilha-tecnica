@@ -11,3 +11,4 @@ Para entrar na trilha, abra um PR adicionando sua linha na tabela abaixo (veja o
 |---|---|---|---|---|---|
 | @exemplo | [exemplo/pedidos](https://github.com/) | Pedidos simplificados | Node.js + Fastify | @outra-pessoa | 1 |
 | @toto9in | [toto9in/toto-ticket](https://github.com/toto9in/toto-ticket) | Bilheteria (venda de ingressos) | Rust + Axum + SQLx | @vinicimdohs | 1 |
+| @vinicimdohs | [vinicimdohs/listinha](https://github.com/vinicimdohs/listinha) | Lista de compras e gastos compartilhados em grupo | Go (stdlib) | @toto9in | 1 |
